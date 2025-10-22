@@ -1,24 +1,103 @@
 # TumorClassificationXAI
 
-This project tackles the Histopathologic Cancer Detection challenge, aiming to identify metastatic cancer in histopathology images. The dataset consists of 96x96 pixel images, with labels based on the presence of tumor tissue in the center 32x32 pixel region. The project compares two CNN architectures: a baseline model and one with batch normalization.
+**This project tackles the Histopathologic Cancer Detection challenge, aiming to identify metastatic cancer in histopathology images. The dataset consists of 96x96 pixel images, with labels based on the presence of tumor tissue in the center 32x32 pixel region. The project compares two CNN architectures: a baseline model and one with batch normalization.**
 
-## Project Structure
-- `data/`: Contains train, test, and train_labels.csv.
-- `src/`: Python modules for preprocessing, model definition, evaluation, and execution.
-- `config/`: Configuration file for hyperparameters and paths.
-- `requirements.txt`: Lists dependencies.
-- `README.md`: Project documentation.
+---
 
-## Setup
-1. Install dependencies: `pip install -r requirements.txt`
-2. Ensure the dataset is placed in the `data/` directory.
-3. Run the main script: `python src/main.py`
+## 🔎 Highlights & Demo
 
-## Results
-- Baseline CNN: Validation accuracy ~0.85, AUC ~0.93
-- BatchNorm CNN: Validation accuracy ~0.91, AUC ~0.97
+- **Live Demo:**  
+  [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tumor-classification-ten.vercel.app/)  
+  _Try tumor prediction and XAI heatmaps interactively!_
 
-## Future Work
-- Implement data augmentation preserving the center 32x32 region.
-- Explore different activation functions.
-- Develop explainable AI methods to visualize model attention.
+- **Visual Results Gallery:**
+
+  | Original | Center Focus Region | Prediction | Attention/Heatmap |
+  |:--------:|:------------------:|:----------:|:-----------------:|
+  | ![](results/classes.png) | <img src="results/Figure_1.png" width="96"/> | **Tumor** | _Add attention/XAI heatmap sample here if available_ |
+
+---
+
+## 🏆 TL;DR Results Table
+
+| Metric               | Baseline CNN | BatchNorm CNN | Best Value | Visual Example        |
+|----------------------|:------------:|:-------------:|:----------:|:---------------------:|
+| Validation Accuracy  | 0.85         | 0.91          | 0.91       | ![](results/classes.png) |
+| AUC                  | 0.93         | 0.97          | 0.97       | ![](results/Figure_1.png) |
+
+---
+
+## ❤️ Why This Matters
+
+Accurate, explainable tumor detection in histopathology supports **faster**, more **reliable** cancer diagnostics, directly impacting patient outcomes and clinical decision-making. XAI visualizations help build *trust* in medical AI—making results transparent for pathologists and clinicians.
+
+---
+
+## 🖇️ Project Structure
+
+- `data/` – Training & test data, labels
+- `src/` – All core code for preprocessing, models, evaluation, and explainability
+- `config/` – Config yaml for hyperparameters
+- `results/` – Output figures, result images, and class distribution plots
+- `requirements.txt` – Dependencies list
+- `README.md` – Project documentation
+- `app.py` – Streamlit webapp for live demo
+
+---
+
+## ⚙️ Setup & Quickstart
+
+**Install dependencies:**  
+```bash
+pip install -r requirements.txt
+```
+
+
+**Download Data:**  
+- Use [Kaggle Histopathologic Cancer Detection](https://www.kaggle.com/c/histopathologic-cancer-detection/data) (place in `/data`)
+
+**Train & Validate:**  
+```bash
+python src/main.py
+```
+
+**Run Web Demo:**  
+```bash
+streamlit run app.py
+```
+---
+
+## 🌟 Demo Output & Visualizations
+
+- ROC curve and confusion matrix from notebook/results/ (add PNGs to `/results`, embed here)
+- Example annotated images:  
+  - Original input
+  - Center region (bounding box)
+  - Model prediction overlay
+  - XAI heatmap (_produce with XAI notebook, or mention as Future Work if not done_)
+
+---
+
+## 📈 Results & Metrics
+
+- **Baseline CNN:** Accuracy ~0.85, AUC ~0.93
+- **BatchNorm CNN:** Accuracy ~0.91, AUC ~0.97
+
+_Sample predictions above. See notebooks & Streamlit app for more detail._
+
+---
+
+## 💬 Future Work
+
+- Add data augmentation focused on the 32x32 central region for robustness.
+- Develop explicit explainable-AI overlays (Grad-CAM/attention).
+- Test for out-of-distribution generalization and rare tumor types.
+- Streamline webapp/cloud deployment (Hugging Face, Vercel, or clinical workflow integration).
+
+---
+
+## 🧑‍💼 Contributors
+
+- [Av1352 (Anju Vilashni)](https://github.com/Av1352)
+- [sidd9981](https://github.com/sidd9981)
+- [yukta1103](https://github.com/yukta1103)

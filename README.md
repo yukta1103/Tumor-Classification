@@ -69,14 +69,25 @@ streamlit run app.py
 
 ## 🔑 Demo Output & Visualizations
 
-**Model ROC Curve:**  
-![](results/Figure_1.png)
+**ROC Curve:**  
+![](src/results/roc_curve.png)  
+*Shows model validation performance. AUC >0.97 highlights strong tumor detection capability.*
 
-**Example Input Patch:**  
-![](results/classes.png)
+**Confusion Matrix:**  
+![](src/results/confusion_matrix.png)  
+*Visualizes true/false positives/negatives—discriminative power of your classifier.*
 
 **SHAP Value Heatmap (XAI Explanation):**  
-![](results/shap_heatmap.png)
+![](src/results/shap.png)  
+*Explains crucial regions affecting model decisions for clinical trust. Blue: negative impact, Red: positive impact.*
+
+<!-- If you want to show baseline vs full model results side-by-side, you can add: -->
+**Baseline ROC Curve:**  
+![](src/results/roc_curve_baseline.png)
+
+**Baseline Confusion Matrix:**  
+![](src/results/confusion_matrix_baseline.png)
+
 ---
 
 ## 📈 Results & Metrics

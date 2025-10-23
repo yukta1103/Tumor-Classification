@@ -7,14 +7,14 @@
 ## 🔎 Highlights & Demo
 
 - **Live Demo:**  
-  [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tumor-classification-ten.vercel.app/)  
+  [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tumor-classification-xai.streamlit.app/)  
   _Try tumor prediction and XAI heatmaps interactively!_
 
 - **Visual Results Gallery:**
 
   | Original | Center Focus Region | Prediction | Attention/Heatmap |
   |:--------:|:------------------:|:----------:|:-----------------:|
-  | ![](results/classes.png) | <img src="results/Figure_1.png" width="96"/> | **Tumor** | _Add attention/XAI heatmap sample here if available_ |
+  | ![](results/classes.png) | <img src="results/Figure_1.png" width="96"/> | **Tumor** |![](src/results/shap.png) |
 
 ---
 
@@ -74,7 +74,7 @@ streamlit run app.py
   - Original input
   - Center region (bounding box)
   - Model prediction overlay
-  - XAI heatmap (_produce with XAI notebook, or mention as Future Work if not done_)
+  - XAI heatmap 
 
 ---
 
@@ -92,12 +92,11 @@ _Sample predictions above. See notebooks & Streamlit app for more detail._
 - Add data augmentation focused on the 32x32 central region for robustness.
 - Develop explicit explainable-AI overlays (Grad-CAM/attention).
 - Test for out-of-distribution generalization and rare tumor types.
-- Streamline webapp/cloud deployment (Hugging Face, Vercel, or clinical workflow integration).
 
 ---
 
 ## 🧑‍💼 Contributors
 
 - [Av1352 (Anju Vilashni)](https://github.com/Av1352)
-- [sidd9981](https://github.com/sidd9981)
 - [yukta1103](https://github.com/yukta1103)
+- [sidd9981](https://github.com/sidd9981)

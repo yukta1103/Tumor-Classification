@@ -69,10 +69,14 @@ streamlit run app.py
 
 ## 🔑 Demo Output & Visualizations
 
-| ROC Curve / Class Dist | Example Input Patch | XAI Heatmap |
-|:----------------------:|:------------------:|:------------------:|:-----------:|
-| ![](results/Figure_1.png) | ![](results/classes.png) | ![](results/shap_heatmap.png) |
+**Model ROC Curve:**  
+![](results/Figure_1.png)
 
+**Example Input Patch:**  
+![](results/classes.png)
+
+**SHAP Value Heatmap (XAI Explanation):**  
+![](results/shap_heatmap.png)
 ---
 
 ## 📈 Results & Metrics

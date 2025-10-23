@@ -27,7 +27,7 @@
 
 ---
 
-## ❤️ Why This Matters
+## 🚀 Why This Matters
 
 Accurate, explainable tumor detection in histopathology supports **faster**, more **reliable** cancer diagnostics, directly impacting patient outcomes and clinical decision-making. XAI visualizations help build *trust* in medical AI—making results transparent for pathologists and clinicians.
 
@@ -67,14 +67,11 @@ streamlit run app.py
 ```
 ---
 
-## 🌟 Demo Output & Visualizations
+## 🔑 Demo Output & Visualizations
 
-- ROC curve and confusion matrix from notebook/results/ (add PNGs to `/results`, embed here)
-- Example annotated images:  
-  - Original input
-  - Center region (bounding box)
-  - Model prediction overlay
-  - XAI heatmap 
+| ROC Curve / Class Dist | Example Input Patch | XAI Heatmap |
+|:----------------------:|:------------------:|:------------------:|:-----------:|
+| ![](results/Figure_1.png) | ![](results/classes.png) | ![](results/shap_heatmap.png) |
 
 ---
 
@@ -82,8 +79,6 @@ streamlit run app.py
 
 - **Baseline CNN:** Accuracy ~0.85, AUC ~0.93
 - **BatchNorm CNN:** Accuracy ~0.91, AUC ~0.97
-
-_Sample predictions above. See notebooks & Streamlit app for more detail._
 
 ---
 

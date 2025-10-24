@@ -7,7 +7,7 @@
 ## 🔎 Highlights & Demo
 
 - **Live Demo:**  
-  [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_red_white.svg)](https://tumor-classification-xai.streamlit.app/)  
+  [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tumor-classification-xai.streamlit.app/)  
   _Try tumor prediction and XAI heatmaps interactively!_
 
 - **Visual Results Gallery:**

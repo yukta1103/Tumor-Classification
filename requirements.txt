@@ -7,3 +7,4 @@ streamlit
 pillow
 opencv-python-headless
 plotly
+altair<5
